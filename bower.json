@@ -1,0 +1,21 @@
+{
+  "name": "slide",
+  "version": "0.0.0",
+  "authors": [
+    "syamsul muttaqin <lombok.oc@gmail.com>"
+  ],
+  "description": "slide presentasi angular js",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "~3.0.0"
+  }
+}

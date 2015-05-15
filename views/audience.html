@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="components/reveal.js/css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="components/reveal.js/css/theme/black.css" id="theme">
+</head>
+<body>
+	
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Welcome</h1>
+			</section>
+			<section>
+				<h1>Who am i ?</h1>
+				<p class="fragment">A Software engineer</p>
+			</section>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="components/reveal.js/js/reveal.js"></script>
+	<script type="text/javascript">
+		Reveal.initialize({
+			transition:'default',
+			keyboard: false,
+			controls: false
+		});
+
+		var io = io.connect("http://localhost:8000");
+		io.on('slidechanged', function(slide){
+			Reveal.slide(slide.h, slide.v, slide.s);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "slide",
+  "version": "1.0.0",
+  "description": "slide server",
+  "main": "app.js",
+  "author": "syamsul muttaqin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3",
+    "socket.io": "^1.3.5"
+  }
+}
