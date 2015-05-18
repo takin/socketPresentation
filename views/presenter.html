@@ -4,6 +4,7 @@
 	<title>Welcome</title>
 	<link rel="stylesheet" type="text/css" href="components/reveal.js/css/reveal.css">
 	<link rel="stylesheet" type="text/css" href="components/reveal.js/css/theme/black.css" id="theme">
+	<link rel="stylesheet" type="text/css" href="components/reveal.js/lib/css/zenburn.css">
 </head>
 <body>
 	
@@ -14,28 +15,25 @@
 			</section>
 			<section>
 				<h1>Who am i ?</h1>
-				<p class="fragment">A Software engineer</p>
+				<p class="fragment fade-in">A Software engineer</p>
+			</section>
+			<section>
+			<h2>Contoh code</h2>
+				<pre><code>var http = require('http');
+
+function testing(){
+	console.log('hello world');
+}
+
+http.listen(8000);</code></pre>
 			</section>
 		</div>
 	</div>
 
 
-	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="components/reveal.js/lib/js/head.min.js"></script>
 	<script type="text/javascript" src="components/reveal.js/js/reveal.js"></script>
-	<script type="text/javascript">
-		Reveal.initialize({
-			transition:'default'
-		});
-
-		var io = io.connect("http://localhost:8000");
-		Reveal.addEventListener('slidechanged', function(slide){
-			var dataToSend = {
-				h: Reveal.getIndices().h,
-				v: Reveal.getIndices().v,
-				s: Reveal.getIndices().f || 0
-			};
-			io.emit('slidechanged',dataToSend);
-		});
-	</script>
+	<script type="text/javascript" src="components/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/presenter.js"></script>
 </body>
 </html>

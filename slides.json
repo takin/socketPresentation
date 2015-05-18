@@ -1,0 +1,1 @@
+["\n\t\t\t\t<h1>Welcome</h1>\n\t\t\t","\n\t\t\t\t<h1>Who am i ?</h1>\n\t\t\t\t<p class=\"fragment fade-in\">A Software engineer</p>\n\t\t\t","\n\t\t\t<h2>Contoh code</h2>\n\t\t\t\t<pre><code>var http = require('http');\n\nfunction testing(){\n\tconsole.log('hello world');\n}\n\nhttp.listen(8000);</code></pre>\n\t\t\t"]
