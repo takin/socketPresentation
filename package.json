@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "slide server",
   "main": "app.js",
+  "scripts":{
+    "start" : "node app.js"
+  },
   "author": "syamsul muttaqin",
   "license": "MIT",
   "dependencies": {

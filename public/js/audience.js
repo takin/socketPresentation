@@ -1,5 +1,5 @@
 (function(r,io){
-	var socket = io.connect("http://localhost:8000");
+	var socket = io.connect("http://192.168.43.211:8000");
 	var slideContainer = document.getElementsByClassName('slides')[0];
 	slideContainer.appendChild(document.createElement('section'));
 	
